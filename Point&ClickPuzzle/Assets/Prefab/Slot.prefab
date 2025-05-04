@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.8867924, g: 0.77651626, b: 0.37089106, a: 1}
+    m_SelectedColor: {r: 0.6289307, g: 0.58955944, b: 0.46082026, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -197,7 +197,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5863080720690488386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6432805930367749517}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: ItemPitchOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!225 &6279307516036992594
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -222,6 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad2ba8a3b66a304898189759c541e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentID: 0
   myBag: {fileID: 11400000, guid: 3da43c5802e5be340b9491ac85eb7ad2, type: 2}
 --- !u!1 &9072644425009605307
 GameObject:
@@ -313,5 +326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotImage: {fileID: 3524283985180021517}
+  slotItemName: 0
   slotID: 0
   itemInSlot: {fileID: 8762509297470470168}

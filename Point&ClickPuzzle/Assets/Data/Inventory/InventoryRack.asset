@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: InventoryRack
   m_EditorClassIdentifier: 
   inventory:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9073749d866d37d478ca619ddd424212, type: 2}
+  - {fileID: 11400000, guid: 9073749d866d37d478ca619ddd424212, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

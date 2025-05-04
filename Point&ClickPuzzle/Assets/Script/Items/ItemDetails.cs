@@ -17,7 +17,10 @@ public class ItemDetails : MonoBehaviour
                 break;
             }
         }
+        InteractiveEvents.OnRisePickUp(thisItem.itemName);
         InventoryManager.instance.Refresh();
         gameObject.SetActive(false);
     }
+
+    
 }

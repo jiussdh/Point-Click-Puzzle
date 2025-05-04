@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Slot : MonoBehaviour
 {
     public Image slotImage;
+    public ItemName slotItemName;
     public int slotID;
 
     public GameObject itemInSlot;
@@ -15,10 +16,16 @@ public class Slot : MonoBehaviour
         if (item == null)
         {
             itemInSlot.SetActive(false);
+            slotItemName = ItemName.Null;
             return;
         }
+        slotItemName = item.itemName;
         slotImage.sprite = item.itemImage;
         itemInSlot.SetActive(true);
     }
     
+    public void ItemPitchOn()
+    {
+        InteractiveEvents.OnRisePitch(slotItemName);
+    }
 }
