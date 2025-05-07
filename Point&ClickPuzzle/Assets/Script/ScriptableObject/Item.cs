@@ -6,5 +6,7 @@ using UnityEngine.UI;
 public class Item : ScriptableObject
 {
     public ItemName itemName;
-    public Sprite itemImage; 
+    public Sprite itemImage;
+    [TextArea]
+    public string itemIntroduction;
 }

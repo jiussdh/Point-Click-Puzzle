@@ -5,6 +5,7 @@ using UnityEngine;
 //宝箱
 public class TreasureChest : Interactive
 {
+
     private SpriteRenderer _renderer;
     public Sprite OpenChest;
 
@@ -21,4 +22,5 @@ public class TreasureChest : Interactive
         }
     }
     
+
 }

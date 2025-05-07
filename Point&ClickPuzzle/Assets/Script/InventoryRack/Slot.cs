@@ -7,6 +7,7 @@ public class Slot : MonoBehaviour
 {
     public Image slotImage;
     public ItemName slotItemName;
+    public string slotText;
     public int slotID;
 
     public GameObject itemInSlot;
@@ -21,11 +22,14 @@ public class Slot : MonoBehaviour
         }
         slotItemName = item.itemName;
         slotImage.sprite = item.itemImage;
+        slotText = item.itemIntroduction;
         itemInSlot.SetActive(true);
     }
     
     public void ItemPitchOn()
     {
         InteractiveEvents.OnRisePitch(slotItemName);
+        FrameEvents.OnRiseChangeIntroduction(slotText);
+        FrameEvents.OnRiseShowIntroduction();
     }
 }

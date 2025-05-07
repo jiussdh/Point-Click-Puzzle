@@ -444,6 +444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f53fab1f470ae40a2ac15bbacfdfee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueDataIdle: {fileID: 11400000, guid: 6d46a99fecc7e394ca5ac45972c45377, type: 2}
+  dialogueDataFinish: {fileID: 11400000, guid: 0c5c24329d7438a4881af15c430bb720, type: 2}
   targetItem: 1
   isDone: 0
   OpenChest: {fileID: 1388097638, guid: ef3ea71b3bcbab14691fe0717d72031b, type: 3}

@@ -34,6 +34,7 @@ public class CursorManager : MonoBehaviour
     //通过检测到物体的tag类型触发对应事件
     private void ClickAction(GameObject clickedObject)
     {
+        
         switch (clickedObject.tag)
         {
             case "Item":
